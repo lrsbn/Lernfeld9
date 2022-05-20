@@ -1,0 +1,10 @@
+IP:	2001:db8:: /32
+Subnetze
+Hamburg
+2001:0db8::/34
+Lübeck
+2001:0db8:4000::/34
+berlin
+2001:0db8:8000::/34
+München
+2001:0db8:c000::/34
