@@ -8,3 +8,12 @@ berlin
 2001:0db8:8000::/34
 München
 2001:0db8:c000::/34
+
+
+routers
+Router>enable
+Router# conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)# ipv6 unicast-routing
+Router(config)#int g0/0/0
+Router(config-if)#ipv6 address FE80::1 link
