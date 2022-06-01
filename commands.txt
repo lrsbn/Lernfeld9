@@ -1,0 +1,19 @@
+SSH einrichten:
+
+Router(config)# ip domain name streamline
+
+Router(config)# crypto key generate rsa
+
+How many bits in the modulus [512]: 1024
+
+Router(config)# enable password admin
+
+Router(config)# username admin password admin
+
+Router(config)# ip ssh version 2
+
+Router(config)# line vty 0  15
+
+Router(config-line)# transport input ssh
+
+Router(config-line)# login local
