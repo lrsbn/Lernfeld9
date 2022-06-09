@@ -32,3 +32,21 @@ exit
 int INTERFACE
 
 ipv6 ospf PROCESS_ID area AREA_ID
+
+-------------------------------
+
+DHCP:
+
+ipv6 dhcp pool POOL_NAME
+
+address prefix ADDRESS_PREFIX
+
+domain-name DOMAIN-NAME
+
+// In alle (Sub)interfaces gehen und da den DHCP-Pool angeben
+ipv6 dhcp server POOL_NAME
+
+// Für Stateful-DHCP
+ipv6 nd managed-confi-flag
+
+// Clients auf DHCP (Automatisch) stellen
