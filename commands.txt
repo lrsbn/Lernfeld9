@@ -17,3 +17,18 @@ Router(config)# line vty 0  15
 Router(config-line)# transport input ssh
 
 Router(config-line)# login local
+
+-------------------------------
+
+OSPF:
+
+ipv6 router ospf PROCESS_ID
+
+router-id X.X.X.X
+
+exit
+
+// In alle Interfaces reingehen und OSPF AREA_ID setzen
+int INTERFACE
+
+ipv6 ospf PROCESS_ID area AREA_ID
